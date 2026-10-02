@@ -1,0 +1,9 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-white text-slate-800 antialiased}
+.btn{@apply inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition disabled:opacity-50}
+.btn-p{@apply btn bg-brand-600 text-white hover:bg-brand-700}
+.btn-o{@apply btn border border-brand-100 bg-white text-brand-700 hover:bg-brand-50}
+.btn-d{@apply btn bg-red-600 text-white hover:bg-red-700}
+.inp{@apply w-full rounded-lg border border-brand-100 bg-white px-3 py-2 text-sm outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-100}
+.card{@apply rounded-xl border border-brand-100 bg-white shadow-sm}
+@media print{body *{visibility:hidden}#receipt,#receipt *{visibility:visible}#receipt{position:absolute;left:0;top:0;width:80mm}}
